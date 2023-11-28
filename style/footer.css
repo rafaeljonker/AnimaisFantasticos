@@ -1,0 +1,26 @@
+footer{
+  background-color: #FAF6ED;
+
+
+}
+  
+.footer{
+  background-color: #FFBB55;
+  
+    margin-left: 30%;
+  
+}
+.footer p{
+  font-size: 1.7vw;
+  padding-left: 1rem;
+  padding: 1vw;
+  margin: 2%;
+  text-transform: uppercase
+}
+
+@media screen and (max-width:768px) {
+
+  .footer{
+    margin: 0px;
+  }
+}

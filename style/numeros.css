@@ -1,0 +1,63 @@
+.numeros-itens{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+  padding-left: 35%;
+  padding-right: 35%;
+  gap: 15%;
+  margin-bottom: 2%;
+}
+
+.numeros-itens h2{
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 15%;
+  padding: 0px;
+}
+
+.numeros-itens p{
+  font-size: 3.2vw;
+  color: #D84733;
+  margin: 0px;
+  margin-top: 4%;
+ 
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .numeros-itens{
+  
+    
+   
+    padding-left: 5vw;
+    padding-right: 4vw;
+    gap: 0px;
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 300px) {
+
+  .numeros-itens{
+  
+    
+   display: flex;
+    padding-left: 5vw;
+    padding-right: 4vw;
+    gap: 0px;
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+  
+  .numeros-itens p{
+    font-size: 5vw;
+    color: #D84733;
+    margin: 0px;
+    margin-top: 4%;
+  
+}
+ }

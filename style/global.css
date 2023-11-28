@@ -1,0 +1,70 @@
+@import url(content-animais.css);
+@import url(FAQ.css);
+@import url(header.css);
+@import url(fonts.css);
+@import url(numeros.css);
+@import url(contato.css);
+@import url(footer.css);
+html{
+  background-color: #FAF6ED;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+p {
+  transition: font-size 0.3s; /* Adicione uma transição suave */
+  margin: 0; /* Remova a margem padrão do <p> */
+  padding: 0.5vw; /* Adicione um preenchimento para espaçamento interno */
+}
+  
+
+
+article{
+  padding-bottom: 5%;
+}
+
+.article-h1{
+  padding-left: 25vw;
+  font-size: 96px;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: lighter;
+  margin: 0px;
+  margin-bottom: 2%;
+  margin: 0; /* Remove a margem do elemento h1 */
+  line-height: 1; /* Define o espaçamento entre as linhas para 1 para eliminar qualquer espaçamento adicional */
+  padding-bottom: 2%;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+  .article-h1{
+    padding-left: 5vw;
+    font-size: 8vw;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: lighter;
+    margin: 0px;
+    margin-bottom: 2%;
+    margin: 0; /* Remove a margem do elemento h1 */
+    line-height: 1; /* Define o espaçamento entre as linhas para 1 para eliminar qualquer espaçamento adicional */
+    padding-bottom: 2%;
+  }
+
+  p {
+    font-size: 2vw; /* Use valores relativos para o tamanho da fonte */
+  }
+  .comentario-padding{
+    padding-right: 20%;
+  }
+
+}

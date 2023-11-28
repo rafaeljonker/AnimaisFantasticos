@@ -1,0 +1,52 @@
+
+
+.mapa{ 
+  padding-left: 30vw;
+  
+}
+.mapa img{
+  
+  width: 200px; /* Define a largura desejada em pixels */
+  height: auto; /* Mantém a proporção da imagem e ajusta automaticamente a altura */
+}
+.contatos-mapa{
+  display: flex;
+   }
+
+.contatos{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+  
+}
+.contatos p {
+  margin: 5px;
+  
+}
+
+
+.contatos-mapa p::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 9px;
+  margin-right: 10px;
+  background: #FB5;
+  margin-bottom: 2px;
+  margin-right: 6px;
+  
+}
+
+
+@media screen and (max-width:768px) {
+  .mapa{ 
+    padding-left: 0px;
+    
+  }
+  .contatos-mapa{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+  }
+  
+}

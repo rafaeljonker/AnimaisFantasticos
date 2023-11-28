@@ -1,0 +1,143 @@
+#FAQ {
+  margin-top: 120px;
+}
+
+.FAQ-itens {
+  padding-left: 30vw;
+  padding-bottom: 6%;
+}
+
+.FAQ-itens h2::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 9px;
+  margin-right: 10px;
+  background: #fb5;
+  margin-bottom: 2px;
+  margin-right: 6px;
+}
+
+
+.FAQ-itens p{
+  display: none;
+}
+
+.FAQ-itens > .toggle .active{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 20%;
+  font-size: 1.2vw;
+  animation: slideDown 0.5s forwards;
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+.FAQ-itens {
+  font-size: 0.7vw;
+}
+
+.FAQ-itens h2 {
+  color: #ee5544;
+  display: inline-block;
+  position: relative; /* Permite posicionar o ::after em relação ao h2 */
+  padding-right: 15px; /* Adicione espaço à direita do h2 para acomodar a seta */
+  font-size: 1.5vw;
+}
+
+.FAQ-itens-click h2::after {
+  content: "";
+  position: absolute; /* Define o posicionamento absoluto para a seta */
+  top: 50%; /* Alinha verticalmente ao centro */
+  left: 100%; /* Coloca a seta imediatamente ao lado do h2 */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 6px 0 6px; /* Ajusta os valores para criar a seta para baixo */
+  border-color: #ee5544 transparent transparent transparent; /* Cor da seta */
+}
+
+.toggle h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 7px 6px; /* Ajusta os valores para criar a seta para cima */
+  border-color: transparent transparent #ee5544 transparent; /* Cor da seta invertida */
+}
+
+#FAQ div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .FAQ-itens > .toggle p {
+    font-size: 0.5rem;
+  }
+
+  #FAQ h2 {
+    font-size: 0.7rem;
+  }
+
+  .FAQ-itens {
+    padding-left: 5vw;
+  }
+  .FAQ-itens h2::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 4.5px;
+    margin-right: 5px;
+    background: #fb5;
+    margin-bottom: 1px;
+    margin-right: 3px;
+  }
+
+  .FAQ-itens-click h2::after {
+    content: "";
+    position: absolute; /* Define o posicionamento absoluto para a seta */
+    top: 50%; /* Alinha verticalmente ao centro */
+    left: 100%; /* Coloca a seta imediatamente ao lado do h2 */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.5px 4px 0 4px; /* Ajusta os valores para criar a seta para baixo */
+    border-color: #ee5544 transparent transparent transparent; /* Cor da seta */
+  }
+
+  .toggle h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 4.5px 4px; /* Ajusta os valores para criar a seta para cima */
+    border-color: transparent transparent #ee5544 transparent; /* Cor da seta invertida */
+  }
+}

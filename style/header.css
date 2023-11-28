@@ -1,0 +1,156 @@
+.header {
+  margin-top: 2%;
+  background-color: #FAF6ED;
+  text-align: center; /* Center-align the content */
+padding-bottom: 2%;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center; /* Vertically center the ul within the .header-menu */
+  background-color: #FFBB55;
+  padding-top: 0.2%;
+  margin-left: 30%;
+  
+}
+
+.header-menu ul {
+  display: flex;
+  
+  padding: 0px;
+  padding-left: 1rem;
+  
+  
+  
+}
+.header-menu-line{
+  display: none;
+}
+
+.menu-icon{
+  display: none;
+}
+
+
+.header-menu li {
+  list-style: none;
+  padding-left: 6%;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 550;
+  text-transform: uppercase;
+  padding-left: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  
+    letter-spacing: 0.1em; /* Ajuste o valor conforme necessário */
+
+}
+.header-menu ul::after{
+  content: "";
+  background-color: black;
+}
+
+
+
+
+.header-menu .last-item::after {
+  content: '';
+  position: absolute; /* Define o posicionamento absoluto para a seta */
+  top: 25%; /* Alinha verticalmente ao centro */
+  right: 0px; /* Afastamento da seta em relação ao elemento pai */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 7.5px; /* Ajuste os valores para controlar o tamanho da seta */
+  border-color: transparent transparent transparent #222222; /* Cor da seta */
+}
+.header-menu .last-item{
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu {
+    display: none;
+    padding: 0px;
+  }
+  .header{
+    background-color:#FFBB55 ;
+    padding: 0px;
+    padding-top: 40px;
+    margin: 0px;
+    margin-bottom: 10%;
+
+
+  }
+  .header-menu-line{
+    display: block;
+    font-size: 10px;
+
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+    
+    
+   
+   
+   width: 50px;
+   height: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+  .active{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: start;
+    
+    
+   
+  }
+  .active ul{
+   display: flex;
+  flex-direction: column;
+
+    margin: 0px;
+    padding: 0px;
+    
+  
+  
+  
+  
+  }
+  
+  .active li{
+    padding: 0px;
+    margin: 5px;
+  }
+  .active a{
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+  }
+
+  .header{
+    margin: 0px;
+    padding: 1px;
+    margin-bottom: 5%;
+    
+  }
+
+ .header-menu .last-item::after{
+  display: none;
+ } 
+
+}
+
+
+
